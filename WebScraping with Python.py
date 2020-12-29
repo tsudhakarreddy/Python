@@ -3,7 +3,6 @@
 
 # In[54]:
 
-
 #Webscraping for multiple stocks
 
 import bs4
@@ -41,15 +40,4 @@ for step in range(1,100):
     df.to_csv("D:\Python\RealTimeStock.csv", mode='a', header=False)
     print(col)
     
-    
-    
-
-
 #print('The Current Price of FB : ' + str(getPrice(lst)))
-
-
-# In[ ]:
-
-
-
-
