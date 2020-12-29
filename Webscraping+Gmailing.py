@@ -1,3 +1,6 @@
+#1. To Webscrape Stock price using Yahoo Finance and send the mail, if the particular stock value increases or decreases.
+#2. Using Beautifulsoup for webscraping , SMTP to send mail.
+
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -23,8 +26,8 @@ def getPrice():
 
 def sendMail():
     server = smtplib.SMTP('smtp.gmail.com',587)
-    server.ehlo()
-    server.starttls()
+    server.ehlo()      #smtp command sent by an email server to identify itself when connecting to another email server
+    server.starttls()  #Security Protocol to facilitate data security over internet.
     server.ehlo()
     
     server.login('xxx@gmail.com','pwd')
